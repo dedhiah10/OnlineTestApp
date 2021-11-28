@@ -1,0 +1,82 @@
+* {
+    color: white;
+    border-collapse: collapse;
+}
+.containerClass {
+    width: 100%;
+    padding: 7% 8% 3%;
+}
+
+h5 {
+    font-size: 24px;
+    text-indent: 20px;
+    margin: 0;
+    font-weight: 600;
+    padding: 7px;
+    background-color: mediumblue;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+.wrongAnswer {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px;
+    text-indent: 20px;
+    border-bottom: 2px solid white;
+    background-color: crimson;
+    color: black;
+}
+
+.rightAnswer {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px;
+    text-indent: 20px;
+    border-bottom: 2px solid white;
+    background-color: lawngreen;
+    color: black;
+}
+
+.wrong {
+    float: right;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 13px;
+    background-color: crimson;
+    color: black;
+}
+
+.right {
+    float: right;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 13px;
+    background-color: lawngreen;
+    color: black;
+}
+
+.startQuizBtn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: navy;
+    color: white;
+    border: 3px solid white;
+    padding: 13px;
+    border-radius: 15px;
+}
+
+.startQuizBtn:active, .startQuizBtn:focus {
+    color: lawngreen;
+    background-color: navy;
+    border: 3px solid lawngreen;
+}

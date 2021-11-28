@@ -1,0 +1,18 @@
+<div class="containerClass">
+  <div class="row">
+    <nav class="myNavbar">
+      <a class="logo" href="#">OnlineTestApp</a>
+      <ul class="actualNav">
+        <a 
+          class="navItem" 
+          routerLinkActive="navItemActive" 
+          [routerLinkActiveOptions]="{exact: true}"
+          routerLink="/"
+          >Quiz</a>
+        <a class="navItem" routerLinkActive="navItemActive" routerLink="/result">Result</a>
+      </ul>
+    </nav>
+  </div>
+  <!-- <div class="row" id="main-site"></div> -->
+  <router-outlet></router-outlet>
+</div>

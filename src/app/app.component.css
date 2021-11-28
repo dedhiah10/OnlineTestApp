@@ -1,0 +1,70 @@
+* {
+    --navbar-main-color: mediumvioletred;
+    --navbar-secondary-color: white;
+    --site-border-color: white;
+    --site-background-color: #292929;
+    --site-text-color: white;
+
+    /*
+    var(--navbar-secondary-color)
+    */
+
+    border-collapse: collapse;
+    margin: 0;
+    padding:0;
+}
+
+.containerClass {
+    width: 100%;
+}
+
+
+
+.myNavbar {
+    position: fixed;
+    width: 100%;
+    background-color: var(--navbar-main-color);
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    border: 1px solid var(--site-border-color);
+}
+
+.logo {
+    color: var(--navbar-secondary-color);
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 36px;
+    border: 1px solid var(--site-border-color);
+}
+
+.actualNav {
+    display: flex;
+}
+
+.navItem {
+    display: block;
+    border: 1px solid var(--site-border-color);
+    color:var(--navbar-secondary-color);
+    text-decoration: none;
+    text-align: center;
+    font-size: 26px;
+    width: 100%;
+    padding: 9px;
+    margin: auto;
+}
+
+.navItemActive {
+    background-color: var(--navbar-secondary-color);
+    color: var(--navbar-main-color);
+    font-weight: 800;
+}
+
+#main-site {
+    width: 100%;
+    border: 1px solid var(--site-border-color);
+    background-color: var(--site-background-color);
+    color: var(--site-text-color);
+    height: 100%;
+}

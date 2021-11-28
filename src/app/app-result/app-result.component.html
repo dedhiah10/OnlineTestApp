@@ -1,0 +1,37 @@
+<div class="containerClass">
+    <h3 *ngIf="noQAs" style="text-align: center"><br>No QA sessions taken<br><br>
+        <hr>
+    </h3>
+    <div *ngIf="!noQAs">
+        <h4 style="text-align: center"><br>Your Last QA session taken at: {{ QATime }}
+            <br><br><hr>
+            {{correctanswers}} out of 5 Answer(s) are correct!!
+            <hr><br>
+        </h4>
+        <div *ngFor="let q of QAs; let i = index">
+            <h3>Question No. {{i}} </h3>
+            <div>
+                <span *ngIf="q.answer == q.youranswer" class="right">-- Correct!!</span><span
+                    *ngIf="q.answer != q.youranswer" class="wrong">-- Wrong!!</span>
+                <h5>{{ q.question }} </h5>
+                <div *ngIf="q.answer == q.youranswer">
+                    <p *ngIf="q.answer == 1" class="rightAnswer">Answer: {{ q.option1 }}</p>
+                    <p *ngIf="q.answer == 2" class="rightAnswer">Answer: {{ q.option2 }}</p>
+                    <p *ngIf="q.answer == 3" class="rightAnswer">Answer: {{ q.option3 }}</p>
+                </div>
+                <div *ngIf="q.answer != q.youranswer">
+                    <p *ngIf="q.youranswer == 0" class="wrongAnswer">Not Answered!</p>
+                    <p *ngIf="q.youranswer == 1" class="wrongAnswer">Your choice: {{ q.option1 }}</p>
+                    <p *ngIf="q.youranswer == 2" class="wrongAnswer">Your choice: {{ q.option2 }}</p>
+                    <p *ngIf="q.youranswer == 3" class="wrongAnswer">Your choice: {{ q.option3 }}</p>
+                    <p *ngIf="q.answer == 1" class="rightAnswer">Answer: {{ q.option1 }}</p>
+                    <p *ngIf="q.answer == 2" class="rightAnswer">Answer: {{ q.option2 }}</p>
+                    <p *ngIf="q.answer == 3" class="rightAnswer">Answer: {{ q.option3 }}</p>
+                </div>
+                <br><br>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <a class="startQuizBtn" routerLink="/quiz">Take a new test!</a>
+</div>

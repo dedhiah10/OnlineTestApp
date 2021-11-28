@@ -1,0 +1,5 @@
+<div class="quizContainerClass">
+    <button *ngIf="buttonOnPage" class="startQuizBtn" (click)="startQuiz()">Start Quiz?</button>
+    <br/>
+    <app-question-component *ngIf="!buttonOnPage"></app-question-component>
+</div>

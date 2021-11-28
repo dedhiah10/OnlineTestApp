@@ -1,0 +1,32 @@
+.quizContainerClass {
+    text-align: center;
+    background-color: black;
+    color: var(--site-text-color);
+    padding: 120px 5% 50px;
+}
+
+.questionHead {
+    font-size: 26px;
+    text-decoration: underline;
+}
+
+.startQuizBtn {
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: navy;
+    color: white;
+    border: 3px solid white;
+    padding: 13px;
+    border-radius: 15px;
+}
+
+.startQuizBtn:active,
+.startQuizBtn:focus {
+    color: lawngreen;
+    background-color: navy;
+    border: 3px solid lawngreen;
+}

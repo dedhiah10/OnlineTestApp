@@ -1,0 +1,37 @@
+<h2 class="timer">
+    <h3>Time Left:</h3>
+    <h3>&nbsp;{{ timerString }}</h3>
+</h2>
+<form (ngSubmit)="onSubmit()" #f="ngForm">
+    <h2>{{questionsArray[0].question}}</h2>
+    <label class="answerLabel"><input name="1" value="1" type="radio" [(ngModel)]="questionsArray[0].youranswer" required> {{questionsArray[0].option1}}</label>
+    <label class="answerLabel"><input name="1" value="2" type="radio" [(ngModel)]="questionsArray[0].youranswer" required> {{questionsArray[0].option2}}</label>
+    <label class="answerLabel"><input name="1" value="3" type="radio" [(ngModel)]="questionsArray[0].youranswer" required> {{questionsArray[0].option3}}</label>
+    <br/><br/>
+    <hr/><br/>
+    <h2>{{questionsArray[1].question}}</h2>
+    <label class="answerLabel"><input name="2" value="1" type="radio" [(ngModel)]="questionsArray[1].youranswer" required> {{questionsArray[1].option1}}</label>
+    <label class="answerLabel"><input name="2" value="2" type="radio" [(ngModel)]="questionsArray[1].youranswer" required> {{questionsArray[1].option2}}</label>
+    <label class="answerLabel"><input name="2" value="3" type="radio" [(ngModel)]="questionsArray[1].youranswer" required> {{questionsArray[1].option3}}</label>
+    <br/><br/>
+    <hr/><br/>
+    <h2>{{questionsArray[2].question}}</h2>
+    <label class="answerLabel"><input name="3" value="1" type="radio" [(ngModel)]="questionsArray[2].youranswer" required> {{questionsArray[2].option1}}</label>
+    <label class="answerLabel"><input name="3" value="2" type="radio" [(ngModel)]="questionsArray[2].youranswer" required> {{questionsArray[2].option2}}</label>
+    <label class="answerLabel"><input name="3" value="3" type="radio" [(ngModel)]="questionsArray[2].youranswer" required> {{questionsArray[2].option3}}</label>
+    <br/><br/>
+    <hr/><br/>
+    <h2>{{questionsArray[3].question}}</h2>
+    <label class="answerLabel"><input name="4" value="1" type="radio" [(ngModel)]="questionsArray[3].youranswer" required> {{questionsArray[3].option1}}</label>
+    <label class="answerLabel"><input name="4" value="2" type="radio" [(ngModel)]="questionsArray[3].youranswer" required> {{questionsArray[3].option2}}</label>
+    <label class="answerLabel"><input name="4" value="3" type="radio" [(ngModel)]="questionsArray[3].youranswer" required> {{questionsArray[3].option3}}</label>
+    <br/><br/>
+    <hr/><br/>
+    <h2>{{questionsArray[4].question}}</h2>
+    <label class="answerLabel"><input name="5" value="1" type="radio" [(ngModel)]="questionsArray[4].youranswer" required> {{questionsArray[4].option1}}</label>
+    <label class="answerLabel"><input name="5" value="2" type="radio" [(ngModel)]="questionsArray[4].youranswer" required> {{questionsArray[4].option2}}</label>
+    <label class="answerLabel"><input name="5" value="3" type="radio" [(ngModel)]="questionsArray[4].youranswer" required> {{questionsArray[4].option3}}</label>
+    <br/><br/>
+    <hr/><br/>
+    <button title="Answer all questions!" class="startQuizBtn" type="submit" [disabled]="!answered">Submit Answers</button>
+</form>

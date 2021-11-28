@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+hr {
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    background-color: black;
+    width: 100%;
+    height: 2px;
+}
